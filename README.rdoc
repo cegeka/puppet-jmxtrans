@@ -1,0 +1,5 @@
+= puppet-jmxtrans module
+
+{<img src='https://codex.cegeka.be/jenkins/job/puppet-jmxtrans/badge/icon' />}[https://codex.cegeka.be/jenkins/job/puppet-jmxtrans/]
+
+This is the jmxtrans module.
