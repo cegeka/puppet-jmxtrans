@@ -17,9 +17,11 @@ class jmxtrans {
   }
 
   service { 'jmxtrans':
-    ensure    => running,
-    hasstatus => true,
-    enable    => true
+    ensure     => running,
+    enable     => true,
+    hasstatus  => true,
+    hasrestart => true,
+    require    => Package['jmxtrans']
   }
 
 }
