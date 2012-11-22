@@ -3,12 +3,12 @@
     "host" : "<%= jmx_host %>",
     "port" : "<%= jmx_port %>",
     <% if jmx_username != '' %>
-     "username": "<%= jmx_username %>",
-     <% end %>
+    "username": "<%= jmx_username %>",
+    <% end %>
     <% if jmx_password != '' %>
     "password": "<%= jmx_password %>",
     <% end %>
-    "queries" : [queries {
+    "queries" : [ {
       "obj" : "<%= objtype %>",
       "attr": [ <%= attributes %> ],
       "outputWriters" : [ {
@@ -20,8 +20,8 @@
           "debug" : <%= debug %>,
           "typeNames" : ["name"]
         }
-      } ],
-    } ],
+      } ]
+    } ]
     "numQueryThreads" : 2
   } ]
 }
