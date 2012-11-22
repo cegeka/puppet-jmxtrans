@@ -18,7 +18,6 @@ jmxtrans::keyoutwriter { 'dev.example.com':
   outputfile        => '/tmp/jmxtrans-dev.example.com.log',
   maxlogfilesize    => '10M',
   maxlogbackupfiles => 200,
-  debug             => true
 }
 
 jmxtrans::stdoutwriter { 'dev.example.com':
