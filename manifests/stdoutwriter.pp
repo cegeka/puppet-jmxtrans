@@ -1,4 +1,4 @@
-define jmxtrans::stdoutwriter ($jmx_host, $jmx_port, $objtype, $attributes, $jmx_username='', $jmx_password='') {
+define jmxtrans::stdoutwriter ($jmx_host, $jmx_port, $objtype, $attributes, $host_alias = '', $return_alias = '', $jmx_username='', $jmx_password='') {
 
   include jmxtrans
 

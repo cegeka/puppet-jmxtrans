@@ -2,6 +2,9 @@
 "servers" : [ {
     "host" : "<%= jmx_host %>",
     "port" : "<%= jmx_port %>",
+    <% if host_alias != '' %>
+    "alias": "<%= host_alias %>",
+    <% end %>
     <% if jmx_username != '' %>
     "username": "<%= jmx_username %>",
     <% end %>
@@ -10,6 +13,9 @@
     <% end %>
     "queries" : [ {
       "obj" : "<%= objtype %>",
+      <% if result_alias != '' %>
+      "resultAlias": "<%= result_alias %>",
+      <% end %>
       "attr": [ <%= attributes %> ],
       "outputWriters" : [ {
         "@class" : "com.googlecode.jmxtrans.model.output.GraphiteWriter",
