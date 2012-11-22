@@ -23,7 +23,9 @@
           "outputFile" : "<%= outputfile %>",
           "maxLogFileSize" : "<%= maxlogfilesize %>",
           "maxLogBackupFiles" : <%= maxlogbackupfiles %>,
-          "typeNames" : ["name"]
+          <% if typenames != "" %>
+          "typeNames" : [ "<%= typenames %>" ]
+          <% end %>
         }
       } ]
     } ]
