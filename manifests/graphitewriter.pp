@@ -1,5 +1,7 @@
 define jmxtrans::graphitewriter ($jmx_host, $jmx_port, $jmx_username='', $jmx_password='', $objtype, $attributes, $graphite_host, $graphite_port, $typenames) {
 
+  include jmxtrans
+
   file { "/var/lib/jmxtrans/graphite.${name}.json":
     ensure  => present,
     owner   => 'root',
