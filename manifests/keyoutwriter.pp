@@ -8,7 +8,8 @@ define jmxtrans::keyoutwriter ( $jmx_host, $jmx_port, $jmx_username='', $jmx_pas
     owner   => 'root',
     group   => 'root',
     mode    => '0644',
-    content => template('jmxtrans/output/keyoutwriter.erb');
+    content => template('jmxtrans/output/keyoutwriter.erb'),
+    require => Package['jmxtrans']
   }
 
 }
