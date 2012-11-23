@@ -1,5 +1,5 @@
 define jmxtrans::keyoutwriter ( $jmx_host, $jmx_port, $objtype, $attributes,
-                                $outputfile, $maxlogfilesize, $maxlogbackupfiles, $typenames = '', $host_alias = '', $return_alias = '', $jmx_username='', $jmx_password='') {
+                                $outputfile, $maxlogfilesize, $maxlogbackupfiles, $typenames = '', $host_alias = '', $result_alias = '', $jmx_username='', $jmx_password='') {
 
   include jmxtrans
 

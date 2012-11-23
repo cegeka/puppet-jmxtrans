@@ -1,4 +1,4 @@
-define jmxtrans::graphitewriter ($jmx_host, $jmx_port, $objtype, $attributes, $graphite_host, $graphite_port, $typenames='', $host_alias = '', $return_alias = '', $jmx_username='', $jmx_password='') {
+define jmxtrans::graphitewriter ($jmx_host, $jmx_port, $objtype, $attributes, $graphite_host, $graphite_port, $typenames='', $host_alias = '', $result_alias = '', $jmx_username='', $jmx_password='') {
 
   include jmxtrans
 
