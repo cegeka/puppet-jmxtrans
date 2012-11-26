@@ -20,7 +20,7 @@
       "outputWriters" : [ {
         "@class" : "com.googlecode.jmxtrans.model.output.GraphiteWriter",
         "settings": {
-          "host" : "<%= graphite_host %>"
+          "host" : "<%= graphite_host %>",
           "port" : "<%= graphite_port %>",
           <% if typenames != "" %>
           "typeNames" : [ "<%= typenames %>" ],
