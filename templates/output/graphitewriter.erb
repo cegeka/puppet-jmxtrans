@@ -1,29 +1,29 @@
 {
 "servers" : [ {
-    "host" : "<%= jmx_host %>",
-    "port" : "<%= jmx_port %>",
-    <% if host_alias != '' %>
-    "alias": "<%= host_alias %>",
+    "host" : "<%= @jmx_host %>",
+    "port" : "<%= @jmx_port %>",
+    <% if @host_alias != '' %>
+    "alias": "<%= @host_alias %>",
     <% end %>
-    <% if jmx_username != '' %>
-    "username": "<%= jmx_username %>",
+    <% if @jmx_username != '' %>
+    "username": "<%= @jmx_username %>",
     <% end %>
-    <% if jmx_password != '' %>
-    "password": "<%= jmx_password %>",
+    <% if @jmx_password != '' %>
+    "password": "<%= @jmx_password %>",
     <% end %>
     "queries" : [ {
-      "obj" : "<%= objtype %>",
-      <% if result_alias != '' %>
-      "resultAlias": "<%= result_alias %>",
+      "obj" : "<%= @objtype %>",
+      <% if @result_alias != '' %>
+      "resultAlias": "<%= @result_alias %>",
       <% end %>
-      "attr": [ <%= attributes %> ],
+      "attr": [ <%= @attributes %> ],
       "outputWriters" : [ {
         "@class" : "com.googlecode.jmxtrans.model.output.GraphiteWriter",
         "settings": {
-          "host" : "<%= graphite_host %>",
-          "port" : "<%= graphite_port %>",
-          <% if typenames != "" %>
-          "typeNames" : [ "<%= typenames %>" ],
+          "host" : "<%= @graphite_host %>",
+          "port" : "<%= @graphite_port %>",
+          <% if @typenames != "" %>
+          "typeNames" : [ "<%= @typenames %>" ],
           <% end %>
         }
       } ]
