@@ -3,3 +3,4 @@
 {<img src='https://jenkins-iac.cegeka.be/job/puppet-jmxtrans/badge/icon' />}[https://jenkins-iac.cegeka.be/job/puppet-jmxtrans/]
 
 This is the jmxtrans module.
+
